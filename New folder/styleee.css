@@ -1,0 +1,63 @@
+/* Full page colorful gradient background */
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, red, orange, yellow, green, blue, indigo, violet);
+    background-size: 400% 400%;
+    animation: bgMove 10s infinite linear;
+    color: white;
+}
+
+/* Moving gradient animation */
+@keyframes bgMove {
+    0% { background-position: 0% 50%; }
+    100% { background-position: 100% 50%; }
+}
+
+/* Rainbow heading */
+.rainbow-text {
+    font-size: 3rem;
+    text-align: center;
+    padding: 20px;
+    background: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Common style for sections */
+.color-box {
+    text-align: center;
+    padding: 30px;
+    margin: 20px auto;
+    border-radius: 15px;
+    width: 80%;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+/* Individual colorful sections */
+.pink {
+    background-color: pink;
+    color: aqua;
+}
+
+.yellow {
+    background-color: yellow;
+    color: purple;
+}
+
+.cyan {
+    background-color: cyan;
+    color: orange;
+}
+
+/* Footer styling */
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+}
+
+
